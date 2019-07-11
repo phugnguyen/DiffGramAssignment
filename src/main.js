@@ -43,7 +43,9 @@ module.exports = class CompareFileLists {
 
   printResults() {
     console.log(`Input: alpha_hash_list: ${this.alpha_hash_list}`);
-    console.log(`Input: bravo_hash_list: ${this.bravo_hash_list}`);
+    console.log(`Input: bravo_hash_list: ${this.bravo_hash_list} \n`);
+
+    console.log("Results ... \n");
     this.consume().forEach(result => {
       console.log(result);
     });
