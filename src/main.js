@@ -38,4 +38,12 @@ module.exports = class CompareFileLists {
 
     return results;
   }
+
+  printResults() {
+    console.log(`Input: alpha_hash_list: ${this.alpha_hash_list}`);
+    console.log(`Input: bravo_hash_list: ${this.bravo_hash_list}`);
+    this.consume().forEach(result => {
+      console.log(result);
+    });
+  }
 };
