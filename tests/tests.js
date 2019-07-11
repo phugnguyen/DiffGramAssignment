@@ -89,3 +89,9 @@ describe("CompareFileLists functionality", () => {
     expect(compareFileLists.consume()).to.deep.equal(expected);
   });
 });
+
+// print out results one at a time in the console.
+let compareFileLists = new CompareFileLists(alpha_hash_list, bravo_hash_list);
+compareFileLists.compare();
+compareFileLists.consume();
+compareFileLists.printResults();

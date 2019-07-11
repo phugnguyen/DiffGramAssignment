@@ -3,6 +3,8 @@ module.exports = class CompareFileLists {
     this.alpha_hash_list = list1;
     this.bravo_hash_list = list2;
     this.lastComparedList = {};
+
+    this.consume = this.consume.bind(this);
   }
 
   compare() {
